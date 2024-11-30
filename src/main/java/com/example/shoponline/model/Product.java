@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
-
+// deleting git ignore commit
 @Entity
 @Table(name = "PRODUCT")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -54,7 +54,7 @@ public class Product implements Serializable {
     public void setQte(int qte) {
         this.qte = qte;
     }
-    
+
 
 
 }
