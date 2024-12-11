@@ -62,8 +62,8 @@ public class Product implements Serializable {
     @Fetch(FetchMode.JOIN)
     private Categorie categorie;
 
-    public Categorie getCategorie() {
-        return categorie;
+    public String getCategorie() {
+        return categorie.getNomCategorie();
     }
 
     public void setDepartment(Categorie categorie) {

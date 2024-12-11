@@ -21,9 +21,9 @@ public class OrderItem {
 
     public Long getId() {
         return id;
-    }
+    }/*
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_product", insertable = false,updatable = false)
+    @JoinColumn(name = "id_product")
     @Fetch(FetchMode.JOIN)
     private Product product;
 
@@ -33,7 +33,7 @@ public class OrderItem {
 
     public void setProduct(Product product) {
         this.product = product;
-    }
+    }*/
 
     @Column(name="qte")
     private int qte=1;
@@ -52,9 +52,9 @@ public class OrderItem {
     public void setPrix(double prix) {
         this.prix=prix;
     }
-
+/*
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_order", insertable = false,updatable = false)
+    @JoinColumn(name = "id_order")
     @Fetch(FetchMode.JOIN)
     private Order order;
 
@@ -64,7 +64,7 @@ public class OrderItem {
 
     public void setOrder(Order order) {
         this.order = order;
-    }
+    }*/
 
     @Column(name = "added_date")
     private Date addeddDate;

@@ -40,6 +40,15 @@ public class Inscription {
         this.nom = nom;
     }
 
+    @Column(name = "type")
+    private String type;
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Column(name = "prenom")
     private String prenom;
     public String getPrenom() {

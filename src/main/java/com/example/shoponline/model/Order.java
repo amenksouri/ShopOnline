@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="ORDER")
+@Table(name="order")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Order {
 
@@ -30,7 +30,7 @@ public class Order {
     public String getStatus() {
         return status;
     }
-
+/*
     @Column(name = "created_date")
     private Date createdDate;
     public void setCreatedDate(Date createdDate) {
@@ -38,6 +38,6 @@ public class Order {
     }
     public Date getCreatedDate() {
         return createdDate;
-    }
+    }*/
 
 }
